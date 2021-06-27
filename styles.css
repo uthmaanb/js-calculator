@@ -1,73 +1,74 @@
+  
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    font-family: sans-serif;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #calc {
-    width: 100%;
-    padding: 30px;
-    border-radius: 10px;
-    border: none;
-    background-color: black;
-  }
-  
-  .screen {
-    width: 100%;
-    height: 80px;
-    border: none;
-    box-sizing: border-box;
-    padding: 15px;
-    margin-bottom: 5%;
-    font-size: 1em;
-    text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#calc {
+  width: 60%;
+  padding: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+}
+
+#display {
+  width: 100%;
+  height: 80px;
+  border: none;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 5%;
+  font-size: 2em;
+  text-align: right;
+  color: black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 20%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1em;
+  margin: 1.5%;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.c-btn{
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+input:disabled{
     color: black;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  button {
-    width: 20%;
-    height: 50px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 1em;
-    margin: 1.5%;
-    background-color: white;
-    transition: 0.3s ease-in-out;
-  }
-
-  .c-btn{
-    width: 100%;
-  }
-  
-  button:hover {
-    cursor: pointer;
-    background-color: red;
-  }
-
-  input:disabled{
-      color: black;
-      background-color: blanchedalmond;
-  }
+    background-color: blanchedalmond;
+}
