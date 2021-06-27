@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="calc">
+        <input class="screen" type="text" disabled />
+        <div class="buttons">
+          <!-- button on Calculator layout -->
+          <div class="row">
+            <button class="btn" onclick="click(7)">7</button>
+            <button class="btn" onclick="click(8)">8</button>
+            <button class="btn" onclick="click(9)">9</button>
+            <button class="btn" onclick="click('/')">/</button>
+          </div>
+          <div class="row">
+            <button class="btn" onclick="click(4)">4</button>
+            <button class="btn" onclick="click(5)">5</button>
+            <button class="btn" onclick="click(6)">6</button>
+            <button class="btn" onclick="click('*')">X</button>
+          </div>
+          <div class="row">
+            <button class="btn" onclick="click(1)">1</button>
+            <button class="btn" onclick="click(2)">2</button>
+            <button class="btn" onclick="click(3)">3</button>
+            <button class="btn" onclick="click('-')">-</button>
+          </div>
+          <div class="row">
+            <button class="btn" onclick="click(0)">0</button>
+            <button class="btn" onclick="click('.')">.</button>
+            <button class="btn" onclick="equal('=')">=</button>
+            <button class="btn" onclick="click('+')">+</button>
+          </div>
+          <div class="row">
+            <button class="c-btn" onclick="clrdisp()">C</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
